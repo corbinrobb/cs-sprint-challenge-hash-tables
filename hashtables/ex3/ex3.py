@@ -1,22 +1,19 @@
-# WORKS BUT SUPER SLOW
-# TRY AGIAN LATER
+def intersection(arrays):
+    d = {}
+    looking = len(arrays)
+    result = []
 
-# def intersection(arrays):
-#     d = {}
-#     count = 0
-#     looking = len(arrays)
+    for x in arrays:
+        for y in x:
+            if y not in d:
+                d[y] = 1
+            else:
+                new_count = d[y] + 1 
+                d[y] = new_count
+                if new_count == looking:
+                    result.append(y)
 
-#     for x in arrays:
-#         count += 1
-#         d[count] = []
-#         for y in x:
-#             if (count - 1) in d:
-#                 if y in d[count - 1]:
-#                     d[count].append(y)
-#             elif count == 1:
-#                 d[count].append(y)
-
-#     return d[looking]
+    return result
 
 
 

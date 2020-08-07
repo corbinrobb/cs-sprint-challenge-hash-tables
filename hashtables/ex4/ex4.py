@@ -1,8 +1,16 @@
 def has_negatives(a):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+    result = []
+    d = {}
+
+    for n in a:
+        desired = n * (-1)
+        if desired in d:
+            if n > desired:
+                result.append(n)
+            else:
+                result.append(desired)
+        else:
+            d[n] = desired
 
     return result
 

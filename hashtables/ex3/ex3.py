@@ -1,6 +1,23 @@
-def intersection(arrays):
+# WORKS BUT SUPER SLOW
+# TRY AGIAN LATER
 
-   pass
+# def intersection(arrays):
+#     d = {}
+#     count = 0
+#     looking = len(arrays)
+
+#     for x in arrays:
+#         count += 1
+#         d[count] = []
+#         for y in x:
+#             if (count - 1) in d:
+#                 if y in d[count - 1]:
+#                     d[count].append(y)
+#             elif count == 1:
+#                 d[count].append(y)
+
+#     return d[looking]
+
 
 
 if __name__ == "__main__":
